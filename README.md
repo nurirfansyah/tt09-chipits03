@@ -1,6 +1,6 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
 
-# Tiny Tapeout Analog Project: ITS Chip #3
+# Tiny Tapeout Analog Project Template
 
 - [Read the documentation for project](docs/info.md)
 
