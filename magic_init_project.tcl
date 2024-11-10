@@ -8,7 +8,7 @@
 
 # Change the settings below to match your design:
 # ------------------------------------------------
-set TOP_LEVEL_CELL     time_domain_comparator_its
+set TOP_LEVEL_CELL     tt_um_tdc_its
 set TEMPLATE_FILE      tt_analog_1x2.def
 set POWER_STRIPE_WIDTH 2um                 ;# The minimum width is 1.2um
 
@@ -45,10 +45,3 @@ foreach {name x} $POWER_STRIPES {
     draw_power_stripe $name $x
 }
 
-# Save the layout and export GDS/LEF
-# ----------------------------------
-save ${TOP_LEVEL_CELL}.mag
-file mkdir gds
-gds write gds/${TOP_LEVEL_CELL}.gds
-file mkdir lef
-lef write lef/${TOP_LEVEL_CELL}.lef -hide -pinonly
