@@ -41,3 +41,12 @@ C {devices/ipin.sym} 130 -350 0 0 {name=p15 sig_type=std_logic lab=vssa}
 C {devices/ipin.sym} 130 -410 0 0 {name=p16 sig_type=std_logic lab=start}
 C {devices/opin.sym} 110 -310 0 0 {name=p17 sig_type=std_logic lab=outp}
 C {devices/opin.sym} 110 -290 0 0 {name=p18 sig_type=std_logic lab=outn}
+C {devices/code.sym} 45 -595 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+* .lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+"
+spice_ignore=false}
