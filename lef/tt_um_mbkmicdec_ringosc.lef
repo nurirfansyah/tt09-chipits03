@@ -1,10 +1,6 @@
-VERSION 5.7 ;
-  NOWIREEXTENSIONATPIN ON ;
-  DIVIDERCHAR "/" ;
-  BUSBITCHARS "[]" ;
-MACRO tt_um_tdc_its
+MACRO tt_um_mbkmicdec_ringosc
   CLASS BLOCK ;
-  FOREIGN tt_um_tdc_its ;
+  FOREIGN tt_um_mbkmicdec_ringosc ;
   ORIGIN 0.000 0.000 ;
   SIZE 161.000 BY 225.760 ;
   PIN clk
@@ -1128,6 +1124,6 @@ MACRO tt_um_tdc_its
         RECT 132.490 1.000 133.390 12.630 ;
         RECT 151.810 1.000 152.710 14.510 ;
   END
-END tt_um_tdc_its
+END tt_um_mbkmicdec_ringosc
 END LIBRARY
 
